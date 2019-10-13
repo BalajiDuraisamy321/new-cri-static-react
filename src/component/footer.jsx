@@ -12,27 +12,45 @@ class Footer extends React.Component {
 					<div className="row">
 						<div className="col-12 col-sm-12 col-md-8 mx-auto">
 							<a
-								href="https://codepen.io/kodi24fever"
+								href="https://www.crigroups.com"
 								target="_blank"
-								rel="noopener noreferrer">
+								rel="noopener noreferrer"
+								style={{
+									textAlign:"left"
+								}}>
 								<img className="img-fluid" src={codepen} alt=""/>
 							</a>
 							<a
-								className="px-3"
-								href="https://github.com/kodi24fever"
+								className="px-3 "
+								href="https://www.facebook.com/cripumps"
 								target="_blank"
-								rel="noopener noreferrer">
-								<img src={github} alt=""/>
+								rel="noopener noreferrer"
+								style={{
+									textAlign:"center"
+								}}>
+								<img className="img-fluid" src="https://www.pngix.com/pngfile/middle/10-103262_vector-facebook-icon-svg-hd-png-download.png" alt="" style={{
+								borderRadius: 50 + "%",
+								height: 25 + "px",
+								width: 25 + "px",
+								
+							}}/>
 							</a>
-							<a
-								href="https://www.linkedin.com/in/frankizquierdo"
-								target="_blank"
-								rel="noopener noreferrer">
-								<img src={linkedin} alt=""/>
-							</a>
+							<p
+								
+								style={{
+									textAlign:"right"
+								}}>
+								<img className="img-fluid" src="http://cdn.onlinewebfonts.com/svg/img_322946.png" alt="" style={{
+								borderRadius: 50 + "%",
+								height: 25 + "px",
+								width: 25 + "px",
+								
+							}}/>
+								Toll free 1800 200 1234
+							</p>
 						</div>
 					</div>
-					<h5 className="pt-4">Frank Izquierdo &copy; 2018</h5>
+					<h5 className="pt-4">CRI PUMPS &copy; 2018 AWARD</h5>
 				</div>
 			</div>
 		);

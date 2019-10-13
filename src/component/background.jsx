@@ -11,14 +11,13 @@ export default class Background extends React.Component {
 	render() {
 		return (
 			<div id="my-background" className="background">
-				<div id="stars" />
-				<div id="stars2" />
-				<div id="stars3" />
+				<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiF45DfzpnlAhUIPI8KHW5fBsIQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.glassdoor.co.in%2FOverview%2FWorking-at-C-R-I-Pumps-EI_IE573258.11%2C22.htm&psig=AOvVaw3wfI4NslPyO0go_wNjfAFi&ust=1571069131715500" alt=""/>
 				<div className="top-container flex">
+					
 					<h1>
-						Hello, I&apos;m Frank Izquierdo.
-						<br />
-						I&apos;m a Full Stack Web Developer.
+					 C.R.I. PUMPS<br />&apos;WINS THE NATIONAL ENERGY CONSERVATION AWARD 2018
+						&apos;
+						<br />for the 4th time.
 					</h1>
 					{/* offset can be cahnged in node modules wowjs default file */}
 					<button
@@ -33,7 +32,7 @@ export default class Background extends React.Component {
 								behavior: "smooth"
 							});
 						}}>
-						View my work
+						See More Details...
 					</button>
 				</div>
 			</div>

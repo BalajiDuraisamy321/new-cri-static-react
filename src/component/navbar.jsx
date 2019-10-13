@@ -4,6 +4,7 @@ import About from "./about.jsx";
 //import Test from "./test.jsx";
 import Projects from "./projects.jsx";
 import Contact from "./contact.jsx";
+import Footer from "./footer.jsx";
 
 import WOW from "wowjs";
 
@@ -66,7 +67,7 @@ class Navbar extends React.Component {
 									behavior: "smooth"
 								});
 							}}>
-							Back to Space
+							START
 						</a>
 						<button
 							className="navbar-toggler"
@@ -84,29 +85,35 @@ class Navbar extends React.Component {
 							<div className="navbar-nav">
 								<a
 									onClick={() => {
+										this.scrolling(this.contact);
+									}}
+									className="btn-style nav-item nav-link">
+									ABOUT
+								</a>
+								<a
+									onClick={() => {
 										this.scrolling(this.about);
 									}}
 									className="btn-style nav-item nav-link">
-									About
+									AWARDS
 								</a>
 								<a
 									onClick={() => {
 										this.scrolling(this.projects);
 									}}
 									className="btn-style nav-item nav-link">
-									Projects
-								</a>
-								<a
-									onClick={() => {
-										this.scrolling(this.contact);
-									}}
-									className="btn-style nav-item nav-link">
-									Contact
+									ITEMS
 								</a>
 							</div>
 						</div>
 					</div>
 				</nav>
+				<Contact
+					ref={this.contact}
+					id="my-contact"
+					fadeInLeft={"wow fadeInLeft"}
+					shake={"wow pulse"}
+				/>
 
 				<About
 					ref={this.about}
@@ -123,12 +130,7 @@ class Navbar extends React.Component {
 					fadeInRight={"wow fadeInRight"}
 					fadeIn={"wow fadeIn"}
 				/>
-				<Contact
-					ref={this.contact}
-					id="my-contact"
-					fadeInLeft={"wow fadeInLeft"}
-					shake={"wow pulse"}
-				/>
+				
 			</div>
 		);
 	}
