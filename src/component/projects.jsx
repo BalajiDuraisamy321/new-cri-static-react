@@ -10,12 +10,17 @@ export default class Projects extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div id="my-projects" className="container-fluid bg-light mt-5">
-					<div className=" project-container container bg-light pb-5">
+				<div className="row">
+					<div className="col-8 col-sm-8 col-md-8 mx-auto">
+						<p
+						style={{fontWeight:"bolder",
+						fontSize:10+"px",
+						
+						marginTop:10+"px"}}>INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE NATION.</p>
 						<h1
 							id="projects"
 							className={"text-center " + this.props.fadeInRight}>
-							ITEMS
+							
 						</h1>
 						<img
 							className={"img-fluid " + this.props.fadeInLeft}
@@ -23,8 +28,9 @@ export default class Projects extends React.Component {
 							alt=""
 							style={{
 								
-								height: 100% + "px",
-								width: 100% + "px"
+								height: 250 + "px",
+								width: 1000 + "px",
+								
 							}}
 						/>
 						 <p className="theory" style={{
@@ -33,6 +39,9 @@ export default class Projects extends React.Component {
 					<br/>
 							</p>
 					</div>
+					<div className="A">
+
+				</div>
 					
 				</div>
 			</React.Fragment>

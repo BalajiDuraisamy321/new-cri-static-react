@@ -117,9 +117,12 @@
 }
 
 #footer {
-    background-color: #061b3d;
-    color: gray;
-    z-index: 1000;
+    background-color: #e91b1b;
+    color: white;
+    height:7%;
+    margin-bottom: 10px;
+    width:99%;
+    z-index: 1;
 }
 
 .btn-style {
@@ -370,4 +373,13 @@ span{
   .image{
       height:1px;
       width: 1px;
+  }
+  body{
+      background-color: rgb(247, 243, 191);
+  }
+  
+  .A{
+      background-color: red;
+      height: 100%;
+      width: 100%;
   }

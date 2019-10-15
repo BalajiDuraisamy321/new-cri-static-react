@@ -10,7 +10,7 @@ class Footer extends React.Component {
 			<div id="footer" className="container-fluid text-center py-5">
 				<div className="container">
 					<div className="row">
-						<div className="col-12 col-sm-12 col-md-8 mx-auto">
+						<div className="col-8 col-sm-8 col-md-8 mx-auto">
 							<a
 								href="https://www.crigroups.com"
 								target="_blank"

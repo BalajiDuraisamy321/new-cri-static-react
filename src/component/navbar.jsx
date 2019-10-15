@@ -49,73 +49,8 @@ class Navbar extends React.Component {
 	render() {
 		return (
 			<div>
-				<Background
-					ref={this.navEffect}
-					id="my-background"
-					aboutRef={this.about}
-					bounceIn={"wow bounceIn"}
-				/>
-				<nav
-					id="navbar"
-					className="navbar navbar-expand-lg navbar-light bg-light">
-					<div className="container">
-						<a
-							className="home-style navbar-brand"
-							onClick={() => {
-								window.scrollTo({
-									top: 0,
-									behavior: "smooth"
-								});
-							}}>
-							START
-						</a>
-						<button
-							className="navbar-toggler"
-							type="button"
-							data-toggle="collapse"
-							data-target="#navbarNavAltMarkup"
-							aria-controls="navbarNavAltMarkup"
-							aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span className="navbar-toggler-icon" />
-						</button>
-						<div
-							className="collapse navbar-collapse"
-							id="navbarNavAltMarkup">
-							<div className="navbar-nav">
-								<a
-									onClick={() => {
-										this.scrolling(this.contact);
-									}}
-									className="btn-style nav-item nav-link">
-									ABOUT
-								</a>
-								<a
-									onClick={() => {
-										this.scrolling(this.about);
-									}}
-									className="btn-style nav-item nav-link">
-									AWARDS
-								</a>
-								<a
-									onClick={() => {
-										this.scrolling(this.projects);
-									}}
-									className="btn-style nav-item nav-link">
-									ITEMS
-								</a>
-							</div>
-						</div>
-					</div>
-				</nav>
-				<Contact
-					ref={this.contact}
-					id="my-contact"
-					fadeInLeft={"wow fadeInLeft"}
-					shake={"wow pulse"}
-				/>
 
-				<About
+                <About
 					ref={this.about}
 					id="about-container"
 					bounceLeft={"wow bounceInLeft"}
@@ -124,13 +59,23 @@ class Navbar extends React.Component {
 					fadeIn={"wow fadeIn"}
 					tada={"wow fadeIn"}
 				/>
+				
+				
+				
+
 				<Projects
 					ref={this.projects}
 					id="my-projects"
 					fadeInRight={"wow fadeInRight"}
 					fadeIn={"wow fadeIn"}
 				/>
-				
+				<Background />
+				<Contact
+					ref={this.contact}
+					id="my-contact"
+					fadeInLeft={"wow fadeInLeft"}
+					shake={"wow pulse"}
+				/>
 			</div>
 		);
 	}
