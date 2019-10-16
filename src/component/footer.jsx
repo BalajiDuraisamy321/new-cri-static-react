@@ -7,16 +7,21 @@ import linkedin from "../img/linkedin.png";
 class Footer extends React.Component {
 	render() {
 		return (
-			<div id="footer" className="container-fluid text-center py-5">
+			<div id="footer" style={{
+				height:10+"%",
+				justifyContent:"center",
+				textAlign:"center"
+			}}>
 				
 					<div className="row">
-						<div className="col-8 col-sm-8 col-md-8 mx-auto" style={{width:"auto"}}>
+						<div className="col-8 col-sm-8 col-md-8 mx-auto" style={{width:"auto",justifyContent:"center",justifyItems:"space-around"}}>
 							<a
 								href="https://www.crigroups.com"
 								target="_blank"
 								rel="noopener noreferrer"
 								style={{
-									textAlign:"left"
+									textAlign:"left",
+								
 								}}>
 								<img className="img-fluid" src={codepen} alt="" style={{
 									marginRight:"auto"
@@ -50,7 +55,7 @@ class Footer extends React.Component {
 								<spam style={{marginTop:10+"px",fontSize:2+"vw",fontWeight:"bold"}}>Toll free 1800 200 1234</spam>
 						</div>
 					</div>
-					<h5 className="pt-4">CRI PUMPS &copy; 2018 AWARD</h5>
+					<p className="pt-4">CRI PUMPS &copy; 2018 AWARD</p>
 				
 			</div>
 		);
