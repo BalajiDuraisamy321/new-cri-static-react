@@ -5,23 +5,30 @@ import myImage from "../img/logo.png";
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<div id="my-contact" className="container text-center my-5" >
+			
 				
 				
 				
 				<div style={{
-				fontSize:12+"px",
-				marginLeft:50+"px"}}>
+				       fontSize:12+"px",
+				       fontSize:0.9+"vw",
+					   marginLeft:35+"px",
+					   textAlign:"center"
+					}}>
 						
 						
 					
-					
-				  
-					<span>C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS</span> <br/>
-
-                   <p style={{marginTop:10+"px"}}> CHEMICALS & PROCESS | POWER | WATER & WASTE WATER | OILS & GAS | PHARMA | SUGARS & DISTILLERIES | PAPER & PULP |                     MARINE & DEFENCE METAL & MINING FOOD & BEVERAGE | PETROCHEMICAL & REFINERIES | SOLAR | BUILDING | HVAC | FIRE FIGHTING | AGRICULTURE & RESIDENTIAL		</p>
+						<h1 style={{
+							fontSize:1.5+"vw",
+							width:"auto",
+						    fontWeight:"bolder",}}>
+					                                C.R.I. FLUID SYSTEMS PRODUCTS CATER TO DIVERSE SEGMENTS
+					    </h1>	
+				    <p style={{marginTop:10+"px",fontSize:0.9+"vw",fontWeight:"bold"}}>
+					    CHEMICALS & PROCESS | POWER | WATER & WASTE WATER | OILS & GAS | PHARMA | SUGARS & DISTILLERIES | PAPER & PULP |                     MARINE & DEFENCE METAL & MINING FOOD & BEVERAGE | PETROCHEMICAL & REFINERIES | SOLAR | BUILDING | HVAC | FIRE FIGHTING | AGRICULTURE & RESIDENTIAL	
+					</p>
 				</div>	
-			</div>
+			
 		);
 	}
 }

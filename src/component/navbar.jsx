@@ -29,7 +29,7 @@ class Navbar extends React.Component {
 			var myBackground = document.getElementById("my-background");
 			var domBGRect = myBackground.getBoundingClientRect();
 
-			if (domRect.y <= -domRect.height) {
+			if (domRect.y <= -domRect.heighrgb(250, 247, 211).t) {
 				navBar.classList.add("fade-in-nav");
 			}
 			if (-domBGRect.height < domBGRect.top) {

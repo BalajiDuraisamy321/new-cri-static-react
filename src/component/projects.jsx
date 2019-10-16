@@ -10,38 +10,42 @@ export default class Projects extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div className="row">
-					<div className="col-8 col-sm-8 col-md-8 mx-auto">
+				
 						<p
 						style={{fontWeight:"bolder",
-						fontSize:10+"px",
-						
-						marginTop:10+"px"}}>INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE NATION.</p>
+						fontSize:1.05+"vw",
+						textAlign:"center"
+						}}>INSTALLED OVER 10 LAKHS STAR RATED PUMPSETS ACROSS THE COUNTRY RESULTING IN A CUMULATIVE SAVING OF MORE THAN 9,000 MILLION UNITS OF POWER FOR THE NATION.</p>
 						<h1
 							id="projects"
 							className={"text-center " + this.props.fadeInRight}>
 							
 						</h1>
+				
+							
 						<img
 							className={"img-fluid " + this.props.fadeInLeft}
 							src={myImage}
 							alt=""
 							style={{
 								
-								height: 250 + "px",
-								width: 1000 + "px",
+								display: "block",
+                                marginLeft: "auto",
+                                marginRight: "auto",
+                                width: 75+"%",
 								
 							}}
 						/>
 						 <p className="theory" style={{
-									textAlign:"center"
+									textAlign:"center",
+									fontSize:1.2+"vw",
 								}}>Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables - Solar Systems - Motors
-					<br/>
+					 <br/>
 							</p>
-					</div>
+					
 					<div className="A">
 
-				</div>
+				
 					
 				</div>
 			</React.Fragment>
